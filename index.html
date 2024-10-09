@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ufc-8">
+    <title>Q4 Answer</title>
+</head>
+<body>
+    <h2>Favorite Concert Location in Dubai</h2>
+    
+    <form method="post" action="http://www.deitel.com" >
+        <table>
+            <tr>
+                <td><label>Email:</label></td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <!-- Phone Number Input -->
+            <tr>
+                <td><label>Phone Number:</label></td>
+                <td><input type="tel" name="phone" pattern="\+971-[0-9]{3}-[0-9]{7}" required placeholder="+971-XXX-XXXXXXX"></td>
+            </tr>
+            <!-- Password Input -->
+            <tr>
+                <td><label>Password:</label></td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <!-- Location -->
+            <tr>
+                <td><label>Location:</label></td>
+                <td>
+                    <select name="location">
+                        <option selected>Burj Al Arab</option>
+                        <option>Atlantis The Palm</option>
+                        <option>Jumeirah Beach Hotel</option>
+                        <option>Palace Downtown</option>
+                        <option>Rose Rayhaan by Rotana</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <!-- Date Input -->
+            <tr>
+                <td><label> Date:</label></td>
+                <td><input type="date" name="date" required></td>
+            </tr>
+            
+            <!-- Radio Buttons -->
+            <tr>
+                <td>Preferred Concert Type:</td>
+                <td>
+                    <input type="radio" name="concert_type" value="Inside" required>
+                    <label>Indoor</label>
+                    <input type="radio" name="concert_type" value="Outside">
+                    <label>Outdoor</label>
+                </td>
+            </tr>
+            
+            <!-- Checkboxes -->
+            <tr>
+                <td>Additional Preferences:</td>
+                <td>
+                    <label>VIP Access
+                    <input type="checkbox" name="preferences" value="VIP Access">
+                    </label>
+                    <label>Parking
+                    <input type="checkbox" name="preferences" value="Parking">
+                    </label>
+                    <label>Seating
+                    <input type="checkbox" name="preferences" value="Seating">
+                    </label>
+                </td>
+            </tr>
+            <!-- Comments -->
+            <tr>
+                <td><label>Extra Comments:</label></td>
+                <td><textarea name="comments" rows="4" cols="36"></textarea></td>
+            </tr>
+        </table>
+            <!-- Submit and Reset -->
+        <p>
+         <input type="submit" value="Submit">
+         <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>
